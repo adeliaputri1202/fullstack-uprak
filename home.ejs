@@ -1,0 +1,130 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika', sans-serif;
+    box-sizing:border-box;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 900px;
+    margin-left: 30px;
+}
+.content .textBox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+.content .textBox h2 span{
+    color: #f1dc65;
+    text-shadow: 2px 2px black;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.textBox p{
+    color: #333;
+    font-size: 30px;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #285430;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .35s;
+}
+.content .textBox a:hover{
+    background: #f1dc65;
+    color: black;
+    transition: 0.3s;
+    transform: scale(0.9);
+}
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 500px;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #A4BE7B;
+    clip-path: circle(600px at right 800px );
+}
+.imgBox{
+    height: 450px;
+}
+.desc{
+    background-color: #A4BE7B;
+    margin-top: 97px;
+    height: 200px;
+}
+.desc p{
+    padding: 30px;
+    font-size: 25px;
+    color: #f1dc65;
+    text-shadow: 2px 2px black;
+}
+.desc a{
+    display: inline-block;
+    margin-top: -30px;
+    padding: 8px 20px;
+    margin-left: 20px;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .35s; 
+}
+.desc a:hover{
+    background: #f1dc65;
+    color: black;
+}
+</style>
+<div class="container">
+    
+<div class="circle"></div>
+<section>
+<div class="content">
+    <div class="textBox">
+        <h2>It's Not Just Company <br>It's <span>RAINCALA</span></h2>
+        <P>We are the global leader in commercial real estate services and investments.</P>
+                <a href="#">Join us!</a>
+    </div>
+    <div class="imgBox">
+        <img src="icn.svg">
+    </div>
+</section>
+
+<div class="desc">
+    <p>Raincala Company Engaged In Property. We believe in shared success and that is why you can count on us to quickly adapt to the needs of all investors and markets through good leadership, industry expertise, and unwavering commitment.</p>
+    <a href="/profile">Learn More</a>
+</div>
+</div>

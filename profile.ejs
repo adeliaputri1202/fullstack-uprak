@@ -1,0 +1,101 @@
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika', sans-serif;
+    box-sizing:border-box;
+    }
+    .text{
+    display: flex;
+    margin-top: 30px;
+    }
+    .text h2{
+    font-size: 30px;
+    }
+    .text p{
+    font-size: 20px;
+    }
+    .visi{
+    width: 50%;
+    margin-left: 120px;
+    }
+    .misi{
+    width: 50%;
+    margin-left: 80px;
+    }
+    .pegawai{
+    background-color: #A4BE7B;
+    height: 600px;
+    }
+    .pegawai h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+    }
+    .box{
+    background-color: #5F8D4E;
+    border-radius: 20px;
+    width: 80%;
+    height: 450px;
+    }
+    .box th{
+    width: 150px;
+    background-color: #E5D9B6;
+    border-radius: 10px;
+    }
+    .box td{
+    width: 150px;
+    height: 70px;
+    background-color: #E5D9B6;
+    border-radius: 10px;
+    padding: 5px;
+    }
+
+</style>
+
+<div class="text">
+    <div class="visi">
+
+        <h2>Vision</h2><br>
+        <p>We believe in shared success and that <br> is why you can rely on us to quickly adapt <br> to the needs of all investors and markets <br> through sound leadership, industry <br> expertise and unwavering commitment.</p>
+    </div>
+
+    <div class="misi">
+
+        <h2>Mision</h2><br> 
+        <p>Manage your property, and ensure that <br> all rental or sales progress will be reported <br> regularly. and also We aim to ensure that all <br> articles on our site are empowering, unbiased, <br> accurate, and inclusive.</p>
+    </div>
+</div><br><br><br>
+
+
+    <div class="pegawai"><br>
+        <center>
+            <h2>Our Team</h2>
+            <div class="box"><br><br>
+
+                <table>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Jabatan</th>
+                        <th>Skill</th>
+                        <th colspan="2">Action</th>
+                        <th>Photo</th>
+                    </tr>
+                    <% data.forEach(row => { %>
+                        <tr>
+                            <td><%= row.employeeName %> </td>
+                            <td><%= row.position %> </td>
+                            <td><%= row.skill %> </td>
+                            <td><a href="/edit-employee">Edit</a></td>
+                            <td><a href="/delete-employee">Hapus</a></td>
+                            <td><center><img src="<%= row.imgPath %> " height="50px" width="50px"></center></td>
+                        </tr> 
+                        <% }) %> 
+                </table>
+
+            </div>
+        </center>
+    </div>
+    
